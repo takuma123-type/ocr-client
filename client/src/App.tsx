@@ -1,13 +1,14 @@
-import './App.css';
-import Button from '@mui/material/Button'; 
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Index from "./components/pages/Index";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Button variant="contained">Hello World</Button>
-      </header>
-    </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Index />} />
+        </Routes>
+      </Router>
   );
 }
 
